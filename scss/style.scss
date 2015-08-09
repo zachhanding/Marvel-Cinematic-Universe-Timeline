@@ -1,4 +1,4 @@
-@import 'bourbon'; // http://bourbon.io/
+@import 'bourbon/bourbon'; // http://bourbon.io/
 
 @import '../partials/variables'; // colors, fonts etc...
 
@@ -77,7 +77,7 @@ header {
 
 	h1 {
 		color: $color-3;
-		@include font-size(18px);
+		@include font-size(22px);
 	}
 
 	@include MQ(L) {
@@ -85,7 +85,7 @@ header {
 		line-height: 300px;
 
 		h1 {
-			@include font-size(24px);
+			@include font-size(30px);
 		}
 	}
 }
@@ -108,6 +108,14 @@ header {
 		width: 4px;
 		background: darken($background, 5%);
 	}
+	
+	h2 { 
+		margin-left: 60px;
+		padding: 1em;
+		background: darken($background, 5%);
+		color: $color-1;
+		@include font-size(22px);
+	}
 
 	@include MQ(L) {
 		margin: {
@@ -118,6 +126,11 @@ header {
 		&::before {
 			left: 50%;
 			margin-left: -2px;
+		}
+		
+		h2 { 
+			margin-left: 0;
+			@include font-size(30px);
 		}
 	}
 }
@@ -226,8 +239,9 @@ header {
 	box-shadow: 0 3px 0 darken($background, 5%);
 	@include clearfix;
 
-	h2 {
+	h3 {
 		color: $color-1;
+		font-weight: bold;
 	}
 
 	p, .cd-read-more, .cd-date {
@@ -273,7 +287,7 @@ header {
 	}
 
 	@include MQ(M) {
-		h2 {
+		h3 {
 			@include font-size(20px);
 		}
 
@@ -310,7 +324,7 @@ header {
 			@include font-size(16px);
 		}
 
-		.cd-timeline-block:nth-child(even) & {
+		.cd-timeline-block:nth-of-type(even) & {
 			float: right;
 
 			&::before {
