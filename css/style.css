@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'American Captain';
+  src: url("../fonts/american_captain-webfont.eot");
+  src: url("../fonts/american_captain-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/american_captain-webfont.woff2") format("woff2"), url("../fonts/american_captain-webfont.woff") format("woff"), url("../fonts/american_captain-webfont.ttf") format("truetype"), url("../fonts/american_captain-webfont.svg#american_captainregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /* -------------------------------- 
 
 Primary style
@@ -52,18 +58,20 @@ Main components
 
 -------------------------------- */
 header {
-  height: 200px;
-  line-height: 200px;
   text-align: center;
-  background: #303e49; }
+  background: url(../img/banner.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 100px 0; }
   header h1 {
     color: #ffffff;
     font-size: 22px;
-    font-size: 1.375rem; }
+    font-size: 1.375rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    line-height: 1.4; }
   @media only screen and (min-width: 1170px) {
     header {
-      height: 300px;
-      line-height: 300px; }
+      padding: 150px 0; }
       header h1 {
         font-size: 30px;
         font-size: 1.875rem; } }

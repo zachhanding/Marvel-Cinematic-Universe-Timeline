@@ -6,6 +6,7 @@
 
 @import '../partials/layout'; // responsive grid and media queries
 
+
 /* -------------------------------- 
 
 Primary style
@@ -70,20 +71,22 @@ Main components
 -------------------------------- */
 
 header {
-	height: 200px;
-	line-height: 200px;
 	text-align: center;
-	background: $color-1;
+	background: url(../img/banner.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 100px 0;
 
 	h1 {
 		color: $color-3;
 		@include font-size(22px);
+		background-color: rgba(0,0,0,.6);
+    padding: 30px;
+		line-height: 1.4;
 	}
 
 	@include MQ(L) {
-		height: 300px;
-		line-height: 300px;
-
+		padding: 150px 0;
+		
 		h1 {
 			@include font-size(30px);
 		}
