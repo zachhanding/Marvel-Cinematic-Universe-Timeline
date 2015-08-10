@@ -72,20 +72,18 @@ Main components
 
 header {
 	text-align: center;
-	background: url(../img/banner.jpg) center center no-repeat;
-	background-size: cover;
-	padding: 100px 0;
+	background: $color-1;
+	padding: 100px 10%;
+	line-height: 1.4;
 
 	h1 {
+		margin-bottom: 30px;
 		color: $color-3;
 		@include font-size(22px);
-		background-color: rgba(0,0,0,.6);
-    padding: 30px;
-		line-height: 1.4;
 	}
 
 	@include MQ(L) {
-		padding: 150px 0;
+		padding: 150px 15%;
 		
 		h1 {
 			@include font-size(30px);
