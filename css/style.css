@@ -124,24 +124,23 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  display: table;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
-  .cd-timeline-img img {
-    display: block;
-    width: 24px;
-    height: 24px;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    margin-left: -12px;
-    margin-top: -12px; }
-  .cd-timeline-img.cd-picture {
+  .cd-timeline-img i {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-size: 1.125rem; }
+  .cd-timeline-img.cd-television {
     background: #75ce66; }
   .cd-timeline-img.cd-movie {
     background: #c03b44; }
-  .cd-timeline-img.cd-location {
+  .cd-timeline-img.cd-one-shot {
     background: #f0ca45; }
   @media only screen and (min-width: 1170px) {
     .cd-timeline-img {
@@ -152,6 +151,9 @@ header {
       /* Force Hardware Acceleration in WebKit */
       -webkit-transform: translateZ(0);
       -webkit-backface-visibility: hidden; }
+      .cd-timeline-img i {
+        font-size: 25px;
+        font-size: 1.5625rem; }
       .cssanimations .cd-timeline-img.is-hidden {
         visibility: hidden; }
       .cssanimations .cd-timeline-img.bounce-in {

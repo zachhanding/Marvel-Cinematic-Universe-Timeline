@@ -166,23 +166,21 @@ header {
 	position: absolute;
 	top: 0;
 	left: 0;
+	display: table;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	box-shadow: 0 0 0 4px $color-3, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
 
-	img {
-		display: block;
-		width: 24px;
-		height: 24px;
-		position: relative;
-		left: 50%;
-		top: 50%;
-		margin-left: -12px;
-		margin-top: -12px;
+	i {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		color: white;
+		@include font-size(18px);
 	}
 
-	&.cd-picture {
+	&.cd-television {
 		background: $color-4;
 	}
 
@@ -190,7 +188,7 @@ header {
 		background: $color-2;
 	}
 
-	&.cd-location {
+	&.cd-one-shot {
 		background: $color-5;
 	}
 
@@ -203,6 +201,8 @@ header {
 		/* Force Hardware Acceleration in WebKit */
 		-webkit-transform: translateZ(0);
 		-webkit-backface-visibility: hidden;
+		
+		i { @include font-size(25px); }
 
 		.cssanimations &.is-hidden {
 			visibility: hidden;
